@@ -1,6 +1,6 @@
 # seed_application
 
-A new Flutter project.
+Android and Ios Application of Seed 
 
 ## Getting Started
 
