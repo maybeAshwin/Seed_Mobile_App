@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seed_application/Login_Signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,11 +48,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
       "subtitle": "Track soil health and weather data anytime, anywhere.",
       "image": "assets/images/soil_weather.jpg",
     },
-    {
-      "title": "Real-Time Monitoring",
-      "subtitle": "Track soil health and weather data anytime, anywhere.",
-      "image": "assets/images/soil_weather.jpg",
-    },
   ];
 
   void _nextPage() {
@@ -61,7 +57,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
         curve: Curves.easeInOut,
       );
     } else {
-      // Navigate to the next page (e.g., Login/Signup) when onboarding is complete
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const MyHomePage(title: 'Seed Home Page')),
@@ -161,7 +156,20 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: const Text('Onboarding'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              // Navigate to Login Page
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginPage()),
+              );
+            },
+            icon: const Icon(Icons.login),
+            tooltip: 'Login',
+          ),
+        ],
       ),
       body: const Center(
         child: Text('Welcome to Seed Home Page!'),
