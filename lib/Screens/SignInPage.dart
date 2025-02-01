@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:seed_application/Screens/Login_Signup.dart';
+import 'package:seed_application/Screens/SignUpPage.dart';
 import 'package:seed_application/Screens/homePage.dart';
 import 'package:seed_application/custom_items/Custom_scaffold_welcome.dart';
 
 
-class SignupPage extends StatefulWidget {
-  const SignupPage({super.key});
+class SignInPage extends StatefulWidget {
+  const SignInPage({super.key});
 
   @override
-  State<SignupPage> createState() => _SignupPageState();
+  State<SignInPage> createState() => _SignInPageState();
 }
 
-class _SignupPageState extends State<SignupPage> {
+class _SignInPageState extends State<SignInPage> {
   final _formSignInKey = GlobalKey<FormState>();
   bool rememberPassword = true;
 
@@ -245,7 +245,7 @@ class _SignupPageState extends State<SignupPage> {
                               Navigator.push(
                                 context,
                                MaterialPageRoute(
-                                  builder: (e) => const SignUpScreen(),
+                                  builder: (e) => const SignUpPage(),
                                 ),
                               );
                             },

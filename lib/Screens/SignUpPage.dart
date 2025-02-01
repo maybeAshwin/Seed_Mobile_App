@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
 import 'package:seed_application/custom_items/Custom_scaffold_welcome.dart';
-import 'package:seed_application/Screens/Signup.dart';
-import 'package:seed_application/custom_items/Custom_scaffold_welcome.dart';
+import 'package:seed_application/Screens/SignInPage.dart';
 
-class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({super.key});
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({super.key});
 
   @override
-  State<SignUpScreen> createState() => _SignUpScreenState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen> {
+class _SignUpPageState extends State<SignUpPage> {
   final _formSignupKey = GlobalKey<FormState>();
   bool agreePersonalData = true;
   @override
@@ -297,7 +295,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (e) => const SignupPage(),
+                                  builder: (e) => const SignUpPage(),
                                 ),
                               );
                             },
