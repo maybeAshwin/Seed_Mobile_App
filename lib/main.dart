@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:seed_application/Login_Signup.dart';
+import 'package:seed_application/Screens/Login_Signup.dart';
+import 'package:seed_application/Screens/homePage.dart';
+import 'package:seed_application/Screens/welcome_Screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -163,7 +165,7 @@ class MyHomePage extends StatelessWidget {
               // Navigate to Login Page
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const LoginPage()),
+                MaterialPageRoute(builder: (context) => const welcome_Screen()),
               );
             },
             icon: const Icon(Icons.login),

@@ -30,8 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_native_splash: 2.4.3
   cupertino_icons: ^1.0.6
+  flutter_launcher_icons: ^0.14.2
+  icons_plus: ^5.0.0
+  font_awesome_flutter: ^10.3.0
+  http: ^0.13.5
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +53,10 @@ flutter:
      - assets/images/soil_weather.jpg
      - assets/images/crop_recommendations.jpg
      - assets/images/Welcome.jpg
+     - assets/images/images.jpg
+     - assets/images/welcome_pages.jpg
+     - assets/images/google_icon.png
+
 
 
 #  fonts:
