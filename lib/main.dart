@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:seed_application/Screens/Login_Signup.dart';
-import 'package:seed_application/Screens/homePage.dart';
 import 'package:seed_application/Screens/welcome_Screen.dart';
 
 void main() {
